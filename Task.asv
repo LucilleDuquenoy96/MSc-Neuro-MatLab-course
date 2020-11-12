@@ -1,0 +1,12 @@
+function Task
+
+fA = input('Please specify frequency A: ');
+fB = input('Please specify frequency B: ');
+
+[fHigh,fLow]=SortNumber(fA,fB)
+
+%=zeros(1,3)
+
+for i = 1:3
+    PerformanceList(i)= RunTrial(fLow, fHigh);
+end
